@@ -1,0 +1,20 @@
+on command "unclaim":
+    loop players within 10 blocks of player:
+        if loop-player is not player:
+            message "&c10 Blok yakınında başka bir oyuncu var. Unclaim komutunu kullanamazsın."
+            cancel event
+    if event is not cancelled:
+     
+        message "&aClaim Başarıyla Kaldırıldı!"
+
+
+
+on command "claim":
+    loop players within 10 blocks of player:
+        if loop-player is not player:
+            message "&c10 Blok yakınında başka bir oyuncu var. Claim komutunu kullanamazsın."
+            cancel event
+    if event is not cancelled:
+     
+        message "&aClaim Başarıyla Alındı!"
+
